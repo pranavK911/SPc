@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button
+        {
+            height: 50px;
+            width: 60px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>    
+    <button onclick="
+    let cm='';
+   
+    let ran = Math.random();
+   
+    ran=Math.floor(ran*(4-1))+1;
+   
+    if(ran ==1){
+      cm='stone';
+    }
+    else if(ran==2){
+        cm='papaer';
+    }
+    else{
+        cm='Secisor';
+    }
+    let result='';
+    if(cm==='stone'){
+        result='tie';
+    }
+    else if(cm==='papaer'){
+        result ='you loss';
+    }
+    else{
+        result='you win';
+    }
+    alert(`you choose stone opponent choose ${cm}!   ${result}`)
+    ">Stone</button>
+
+    <button onclick="
+    let cm='';
+   
+    let ran = Math.random();
+      
+    ran=Math.floor(ran*(4-1))+1;
+      
+    if(ran ==1){
+      cm='stone';
+    }
+    else if(ran==2){
+        cm='papaer';
+    }
+    else{
+        cm='Secisor';
+    }
+    let result='';
+    if(cm==='stone'){
+        result='You win';
+    }
+    else if(cm==='papaer'){
+        result ='tie';
+    }
+    else{
+        result='you loss';
+    }
+    alert(`you choose Papper, opponent choose ${cm}!   ${result}`);
+    ">Paper</button>
+
+
+    <button onclick="
+    let cm='';
+   
+    let ran = Math.random();
+      
+    ran=Math.floor(ran*(4-1))+1;
+      
+    if(ran ==1){
+      cm='stone';
+    }
+    else if(ran==2){
+        cm='papaer';
+    }
+    else{
+        cm='Secisor';
+    }
+    let result='';
+    if(cm==='stone'){
+        result='You loss';
+    }
+    else if(cm==='papaer'){
+        result ='';
+    }
+    else{
+        result='tie';
+    }
+    alert(`you choose Papper, opponent choose ${cm}!   ${result}`);
+    ">Secisor</button>
+     <script>     
+     </script>
+</body>
+</html>
